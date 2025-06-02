@@ -964,9 +964,9 @@ def build_leaderboard_tab(
                     </div>
                     """,
                 )
-                last_updated_time = str(elo_results_text["full"][
-                    "last_updated_datetime"
-                ]).split(" ")[0]
+                last_updated_time = str(
+                    elo_results_text["full"]["last_updated_datetime"]
+                ).split(" ")[0]
                 gr.Markdown(
                     make_arena_leaderboard_md(
                         elo_results_text["full"]["leaderboard_table_df"],
